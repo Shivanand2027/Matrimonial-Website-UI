@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Matrimony | Find Your Perfect Match</title>
+  <meta name="description" content="Modern, elegant, and secure matrimonial platform to find your perfect match." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#">
+        <div class="logo-mark">M</div>
+        <span>Matrimonial Website</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="stories.html">Success Stories</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-ghost">Login / Signup</a>
+      </nav>
+      <div class="nav-actions">
+        <label class="toggle" title="Toggle dark mode">
+          <input id="themeToggle" type="checkbox" aria-label="Toggle dark mode" />
+          <div class="knob">🌙</div>
+        </label>
+        <a class="btn btn-primary" href="#get-started">Join Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="bg" aria-hidden="true"></div>
+      <div class="overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div>
+            <div class="eyebrow">Trusted. Private. Respectful.</div>
+            <h1 class="title">Find Your Perfect Match</h1>
+            <p class="subtitle">A warm, secure, and culturally mindful space to meet genuine people, thoughtfully matched with the help of modern technology.</p>
+            <div class="row mt-20">
+              <a href="#plans" class="btn btn-primary">Get Started</a>
+              <a href="#stories" class="btn btn-outline">See Success Stories</a>
+            </div>
+          </div>
+          <div>
+            <div class="search-card" data-animate>
+              <div class="label">Quick Search</div>
+              <div class="search-grid mt-10">
+                <div class="field">
+                  <label class="label" for="gender">Gender</label>
+                  <select id="gender" aria-label="Gender">
+                    <option>Woman</option>
+                    <option>Man</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label" for="age">Age</label>
+                  <select id="age" aria-label="Age range">
+                    <option>18-24</option>
+                    <option>25-30</option>
+                    <option>31-40</option>
+                    <option>41-50</option>
+                    <option>50+</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label" for="religion">Religion/Caste</label>
+                  <input class="input" id="religion" placeholder="e.g., Hindu, Sikh, etc." />
+                </div>
+                <div class="field">
+                  <label class="label" for="city">City</label>
+                  <input class="input" id="city" placeholder="e.g., Mumbai" />
+                </div>
+                <div class="field">
+                  <label class="label" for="caste">Community</label>
+                  <input class="input" id="caste" placeholder="Optional" />
+                </div>
+                <div class="field" style="align-self:end;">
+                  <button class="btn btn-primary" style="width:100%; height:44px;">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Matrimonial Website</h2>
+        <p class="section-sub">A premium experience that respects tradition and embraces modernity.</p>
+        <div class="features">
+          <div class="card" data-animate>
+            <div class="icon">🔒</div>
+            <h3>Secure Platform</h3>
+            <p>Your privacy is our priority with best-in-class security.</p>
+          </div>
+          <div class="card" data-animate>
+            <div class="icon">✅</div>
+            <h3>Verified Profiles</h3>
+            <p>Multi-step verification for genuine and respectful connections.</p>
+          </div>
+          <div class="card" data-animate>
+            <div class="icon">🤖</div>
+            <h3>AI Matchmaking</h3>
+            <p>Smart recommendations based on preferences and compatibility.</p>
+          </div>
+          <div class="card" data-animate>
+            <div class="icon">💬</div>
+            <h3>Easy Communication</h3>
+            <p>Seamless chat and calls designed for comfort and safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section id="stories">
+      <div class="container">
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-sub">Real couples, real journeys to lifelong companionship.</p>
+        <div class="slider" data-animate>
+          <div class="slides" id="storiesSlides">
+            <article class="slide">
+              <img alt="Couple smiling at their wedding" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1974&auto=format&fit=crop" />
+              <div class="pad">
+                <div class="quote">“We matched in weeks and married within a year.”</div>
+                <div class="date">Married • Feb 2023</div>
+              </div>
+            </article>
+            <article class="slide">
+              <img alt="Couple holding hands with rings" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1974&auto=format&fit=crop" />
+              <div class="pad">
+                <div class="quote">“Respectful conversations led to a beautiful partnership.”</div>
+                <div class="date">Married • Aug 2024</div>
+              </div>
+            </article>
+            <article class="slide">
+              <img alt="Traditional wedding ceremony" src="https://images.unsplash.com/photo-1552409905-ec0a3531a6b3?q=80&w=2070&auto=format&fit=crop" />
+              <div class="pad">
+                <div class="quote">“Our families connected instantly — thank you!”</div>
+                <div class="date">Married • Dec 2022</div>
+              </div>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button class="ctrl" data-scroll="storiesSlides" data-dir="-1" aria-label="Previous">◀</button>
+            <button class="ctrl" data-scroll="storiesSlides" data-dir="1" aria-label="Next">▶</button>
+          </div>
+        </div>
+	</div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section id="plans">
+      <div class="container">
+        <h2 class="section-title">Membership Plans</h2>
+        <p class="section-sub">Choose a plan that suits your journey.</p>
+        <div class="pricing">
+          <div class="price-card">
+            <div class="eyebrow">Free</div>
+            <div class="price">$0</div>
+            <ul class="features-list">
+              <li><span class="tick">✔</span> Basic search</li>
+              <li><span class="tick">✔</span> Limited profile views</li>
+              <li><span class="tick">✔</span> Standard privacy</li>
+            </ul>
+            <button class="btn btn-outline" style="width:100%">Choose Free</button>
+          </div>
+          <div class="price-card recommended">
+            <div class="badge">Recommended</div>
+            <div class="eyebrow">Premium</div>
+            <div class="price">$19/mo</div>
+            <ul class="features-list">
+              <li><span class="tick">✔</span> Advanced filters</li>
+              <li><span class="tick">✔</span> Unlimited views</li>
+              <li><span class="tick">✔</span> Priority support</li>
+            </ul>
+            <button class="btn btn-primary" style="width:100%">Go Premium</button>
+          </div>
+          <div class="price-card">
+            <div class="eyebrow">Elite</div>
+            <div class="price">$99/mo</div>
+            <ul class="features-list">
+              <li><span class="tick">✔</span> Dedicated matchmaker</li>
+              <li><span class="tick">✔</span> VIP events</li>
+              <li><span class="tick">✔</span> Concierge support</li>
+            </ul>
+            <button class="btn btn-outline" style="width:100%">Explore Elite</button>
+					  </div>
+		</div>
+	</div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Members Say</h2>
+        <p class="section-sub">Kind words from our respectful community.</p>
+        <div class="testimonials">
+          <article class="testi" data-animate>
+            <div class="stars">★★★★★</div>
+            <p>“Thoughtful design and safe experience. We felt truly respected.”</p>
+            <div class="subtle">Asha & Rohan</div>
+          </article>
+          <article class="testi" data-animate>
+            <div class="stars">★★★★☆</div>
+            <p>“Matches aligned with values. Highly recommend Premium.”</p>
+            <div class="subtle">Nisha</div>
+          </article>
+          <article class="testi" data-animate>
+            <div class="stars">★★★★★</div>
+            <p>“Elegant and easy to use. Found my partner in months.”</p>
+            <div class="subtle">Kabir</div>
+          </article>
+		</div>
+		</div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo" style="color:#fff">
+          <div class="logo-mark">M</div>
+          <span>Matrimonial Website</span>
+        </div>
+        <p class="subtle mt-10">A respectful journey to find your life partner.</p>
+      </div>
+      <div>
+        <div class="foot-title">Quick Links</div>
+        <div class="foot-links">
+          <a href="#about">About</a>
+          <a href="#stories">Success Stories</a>
+          <a href="#plans">Membership</a>
+          <a href="#testimonials">Testimonials</a>
+        </div>
+      </div>
+		<div>
+        <div class="foot-title">Contact</div>
+        <div class="foot-links">
+          <span>Email: shivathoteboy@gmail.com</span>
+          <span>Phone:7558735040</span>
+          <span>Social: @matrimonial</span>
+        </div>
+		</div>
+		<div>
+        <div class="foot-title">Subscribe</div>
+        <div class="subscribe">
+          <input class="input" type="email" placeholder="Your email" aria-label="Email" />
+          <button class="btn btn-primary">Subscribe</button>
+        </div>
+      </div>
+		</div>
+    <div class="container" style="padding-bottom:24px; display:flex; justify-content:space-between; align-items:center;">
+      <div class="subtle">© <span id="year"></span> Matrimonial Website. All rights reserved.</div>
+      <div class="subtle">Terms • Privacy</div>
+	</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
